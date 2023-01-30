@@ -1,0 +1,1 @@
+<view><map style="width:100%;height:100vh" latitude="{{39.909}}" longitude="{{116.39742}}" markers="{{a}}"></map></view>

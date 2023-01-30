@@ -1,0 +1,60 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "用户信息"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+			"color": "#7A7E83",
+			"selectedColor": "#3cc51f",
+			"borderStyle": "black",
+			"backgroundColor": "#ffffff",
+			"height": "50px",
+			"fontSize": "10px",
+			"iconWidth": "24px",
+			"spacing": "3px",
+	    	"iconfontSrc":"static/iconfont.ttf", // app tabbar 字体.ttf文件路径 app 3.4.4+
+			"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "首页",
+	      		"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+	       			"text": "\ue102",
+	        		"selectedText": "\ue103",
+	        		"fontSize": "17px",
+	        		"color": "#000000",
+	        		"selectedColor": "#0000ff"
+	      		}
+			}, {
+				"pagePath": "pages/user/user",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "用户信息"
+			}]
+			// "midButton": {
+			// 	"width": "80px",
+			// 	"height": "50px",
+			// 	"text": "文字",
+			// 	"iconPath": "static/logo.png",
+			// 	"iconWidth": "24px",
+			// 	"backgroundImage": "static/logo.png"
+			// }
+		}
+}

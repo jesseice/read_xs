@@ -1,0 +1,1 @@
+<view class="content"><view>{{a}}</view><button bindtap="{{b}}">请求</button><button type="primary" style="width:100px;margin:20px auto" bindtap="{{c}}">登录微信</button></view>

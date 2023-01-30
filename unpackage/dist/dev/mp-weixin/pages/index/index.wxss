@@ -1,0 +1,8 @@
+
+.banner {
+		margin: 10px;
+		box-sizing: border-box;
+		box-shadow: 1px 0px 3px gray;
+		border-radius: 6px;
+		overflow: hidden;
+}
