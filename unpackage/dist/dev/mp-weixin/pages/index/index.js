@@ -3,6 +3,10 @@ const common_vendor = require("../../common/vendor.js");
 const api_banner = require("../../api/banner.js");
 const api_sign = require("../../api/sign.js");
 require("../../api/request.js");
+if (!Math) {
+  ListItem();
+}
+const ListItem = () => "../../components/listItem/index.js";
 const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "index",
   setup(__props) {

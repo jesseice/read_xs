@@ -10,6 +10,10 @@
 		<view>
 			{{ signData.sign }}
 		</view>
+		<!-- item模板 -->
+		<view class="" style="padding: 10px;">
+			<ListItem />
+		</view>
 		<button @click="getS">请求</button>
 		<button type="primary" style="width: 100px; margin: 20px auto;" @click="loginWX">登录微信</button>
 	</view>
@@ -18,6 +22,7 @@
 <script setup lang="ts">
 import { onBeforeMount, reactive, ref } from 'vue'
 import { getSign, catchBanner } from '../../api';
+import ListItem from '../../components/listItem/index.vue'
 const state: any = reactive({
 	bannerImgs: []
 })
